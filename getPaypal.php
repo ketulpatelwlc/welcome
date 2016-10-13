@@ -1,5 +1,7 @@
 <?php
 
+echo "welcome to github account";
+
 $environment = 'sandbox';   // or 'beta-sandbox' or 'live'
 
 /**
@@ -33,7 +35,7 @@ function PPHttpPost($methodName_, $nvpStr_) {
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
 
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POST, 1);  
 
     // NVPRequest for submitting to server
     $nvpreq = "METHOD=$methodName_&VERSION=$version&PWD=$API_Password&USER=$API_UserName&SIGNATURE=$API_Signature$nvpStr_";
